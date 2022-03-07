@@ -1,0 +1,46 @@
+{
+  "name": "app-store-js",
+  "version": "1.0.0",
+  "description": "Web application creator with database support (SQL) and management, with pre-configured security system.",
+  "main": "main.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davieid/CRUD.git"
+  },
+  "keywords": [
+    "sql",
+    "database",
+    "table",
+    "rows",
+    "columns",
+    "javascript",
+    "js",
+    "secured",
+    "fast",
+    "express",
+    "admin",
+    "monitor",
+    "ml",
+    "ai",
+    "ml5"
+  ],
+  "author": "Aiyegbayo Bolaji",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/davieid/CRUD/issues"
+  },
+  "homepage": "https://github.com/davieid/CRUD#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "ml5": "^1.0.0",
+    "mysql2": "^2.3.0",
+    "postmark": "^2.8.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
