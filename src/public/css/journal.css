@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'regular';
+    src: url( '../css/fonts/regular.otf');
+}
+*{
+	margin: 0;
+	padding:  0;
+	font-family: 'regular';
+    position: relative;
+}
+.menu{
+    display: block;
+    position: relative;
+    padding: 3%;
+}
+.head, .sub{
+    display: block;
+}
+.menu .head img{
+    width: 40%;
+    margin: 0% auto;
+    display: block;
+}
+.menu .sub *{
+    display: inline-block;
+}
+.search{
+    padding: 3%;
+    min-width: 60%;
+}
+.search *{
+    margin: 0;
+}
+.search input[type='search']{
+    width: 70%;
+    height: 36px;
+    padding: 4px;
+}
+.search input[type='button']{
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-transform: capitalize;
+}
+.section{
+    display: block;
+    clear: both;
+}
+.pentagon, .squre{
+    display: inline-block;
+    margin: 2%;
+}
+.pentagon{
+    width: 40%;
+}
+.table, .row{
+    display: block;
+    width: 90%;
+    padding: 3%;
+    margin: 1% auto;
+}
+.row div{
+    display: block;
+    margin: 0;
+}
+.row div img{
+    position: relative;
+    width: 60%;
+    display: block;
+    margin: 1% auto;
+}
+.squre{
+    width: 40%;
+    float: left;
+}
+.blog{
+    display: block;
+    width: 80%;
+    margin: 1% auto;
+    padding: 5%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px burlywood;
+    border-left: solid 2px burlywood;
+    border-top: solid 2px burlywood;
+}
+.Head h2{
+    font-size: 42px;
+    text-align: justify;
+}
+.Body{
+    font-size: 21px;
+    width: 90%;
+    margin: 3% auto;
+}
+.Body p, .Body div{
+    text-align: justify;
+}
+.Body img{
+    display: block;
+    position: relative;
+    width: 60%;
+    margin: 5% auto;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px #ddd;
+}
+.ic{
+    font-size: 14px;
+}
+.footer{
+    background: burlywood;
+    padding: 5%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.commission{
+    font-size: 10px;
+    display: block;
+    width: 60%;
+    text-align: justify;
+    margin: 2% auto;
+}
+html div.amzn-native-content .amzn-native-product-price {
+    top: 100% !important;
+}
+html a.amzn-native-product-buy-now-link {
+    bottom: 100% !important;
+    margin: 0;
+}
+@media screen and ( max-width: 800px){
+    .menu .head img{
+        width: 90%;
+    }
+    .menu .sub a, .menu .sub form{
+        display: block;
+        width: 90%;
+        margin: 2%;
+    }
+    .pentagon, .squre{
+        float: none;
+        display: block;
+        width: 95%;
+        margin: 2% auto;
+    }
+}
