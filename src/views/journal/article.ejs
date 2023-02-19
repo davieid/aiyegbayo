@@ -1,0 +1,19 @@
+<%- include('../partials/head.ejs') %>
+
+    <div class="app">
+        <%- include('../partials/menu.ejs') %>
+        <%- include('../partials/commission.ejs') %>
+        <div class="blog">
+            <div class="Head">
+                <h2><%= article.title %></h2>
+                <b>Author:</b><i>Aiyegbayo Bolaji</i>
+                <br>
+                <b>Created:</b><i>14 December, 2022</i>
+            </div>
+            <div class="Body">
+                <%-article.html%>
+            </div>
+        </div>
+    </div>
+
+<%- include('../partials/foot.ejs') %>

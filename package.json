@@ -4,7 +4,8 @@
   "description": "Web application creator with database support (SQL) and management, with pre-configured security system.",
   "main": "main.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "run-script": "nodemon main.js"
   },
   "repository": {
     "type": "git",
@@ -34,14 +35,19 @@
   },
   "homepage": "https://github.com/davieid/CRUD#readme",
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "helmet": "^5.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.5-lts.1",
     "mysql2": "^2.3.0",
-    "postmark": "^2.8.1"
+    "postmark": "^2.8.1",
+    "url-safe-string": "^1.1.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2"

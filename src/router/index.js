@@ -1,9 +1,7 @@
-const Portfolio = require('./potfolio'),
-Journal = require('./journal'),
+const Journal = require('./journal'),
 Admin = require('./admin');
 
 module.exports = {
-    Portfolio,
     Journal,
     Admin
 }

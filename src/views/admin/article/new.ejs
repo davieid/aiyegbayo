@@ -1,0 +1,41 @@
+<%- include('../../partials/head.ejs') %>
+
+    <div class="app">
+        <%- include('../../partials/menu') %>
+        <%- include('../../partials/admin') %>
+        <h2>
+            <%= page %> Article
+        </h2>
+        <div class="admin-article-form">
+            <form action="<%= article.action %>" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="title">Article Title</label>
+                    <input type="text" name="title" id="title"
+                        value="<%= article.title %>" placeholder="Enter Title">
+                </div>
+                <div>
+                    <label for="image">
+                        <h4>Image</h4>
+                        <img src="/img/uploads/<%= article.image %>" alt="">
+                    </label>
+                    <input type="file" name="image" id="image" style="display: none;">
+                </div>
+                <div>
+                    <label for="description">Article Description</label>
+                    <textarea type="text" name="description" id="description" rows="7" placeholder="Enter description"><%= article.description %></textarea>
+                </div>
+                <div>
+                    <label for="html">HTML</label>
+                    <textarea type="text" name="html" id="html" rows="21" placeholder="Enter HTML"><%= article.html %></textarea>
+                </div>
+                <div>
+                    <button type="submit">
+                        <%= page %>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="admin-article"></div>
+    </div>
+
+<%- include('../../partials/foot.ejs') %>

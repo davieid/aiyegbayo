@@ -46,11 +46,11 @@
     display: block;
     clear: both;
 }
-.pentagon, .squre{
+.pentagon, .squre, .admin-article-form, .admin-article{
     display: inline-block;
     margin: 2%;
 }
-.pentagon{
+.pentagon, .admin-article-form{
     width: 40%;
 }
 .table, .row{
@@ -72,6 +72,7 @@
 .squre{
     width: 40%;
     float: left;
+    z-index: 1000;
 }
 .blog{
     display: block;
@@ -111,6 +112,15 @@
     padding: 5%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    display: block;
+}
+.footer form{
+    width: 100%;
+}
+.footer form *{
+    display: block;
+    margin: 6px;
+    padding: 4px;
 }
 .commission{
     font-size: 10px;
@@ -125,6 +135,32 @@ html div.amzn-native-content .amzn-native-product-price {
 html a.amzn-native-product-buy-now-link {
     bottom: 100% !important;
     margin: 0;
+}
+.admin-article-form form,
+.admin-form form{
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+.admin-article-form form input,
+.admin-article-form form textarea{
+    display: block;
+    width: 95%;
+    margin: 1%;
+    padding: 4px;
+}
+.admin-article-form form input{
+    height: 28px;
+}
+.admin-article-form form label{
+    font-weight: 900;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.admin-article-form img{
+    width: 240px;
+    margin: 8px;
+    cursor: pointer;
 }
 @media screen and ( max-width: 800px){
     .menu .head img{

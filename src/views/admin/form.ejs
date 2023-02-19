@@ -1,0 +1,27 @@
+<%- include('../partials/head.ejs') %>
+
+    <div class="app">
+        <h2>
+            <%= page %>
+        </h2>
+        <div class="admin-form">
+            <form action="<%= action %>" method="post" enctype="application/x-www-form-urlencoded">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email"
+                        placeholder="Enter email">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password"
+                        placeholder="Enter Password">
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="admin-article"></div>
+    </div>
+
+<%- include('../partials/foot.ejs') %>

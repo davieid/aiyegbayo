@@ -2,52 +2,24 @@
     <h2>🔥Trending</h2>
     <div>
         <div class="table">
-            <div class="row">
-                <div>
-                    <img src="/img/01.png" alt="wallet_hardware">
+            <% for(var i = 0; i < data.length; i++) {  %>
+                <div class="row">
+                    <div>
+                        <img src="/img/uploads/<%= data[i].image %>" alt="">
+                    </div>
+                    <div>
+                        <a href="/articles/<%= data[i].link %>"><%= data[i].title %></a>
+                        <p>
+                            <%= data[i].description %>
+                        </p>
+                        <% if(locals.user){ %>
+                            <a href="/admin/articles/update/<%= data[i].id %>">
+                                Update
+                            </a>
+                        <% } %>
+                    </div>
                 </div>
-                <div>
-                    <a href="/top-10">Best Hardware Wallets</a>
-                    <p>
-                        In order to increase security, cold wallets 
-                    are physical devices made to store cryptocurrency 
-                    in a format unconnected to the internet. In other to 
-                    ensure your investments are completely secure, here are 
-                    a list of products I think are worth your time.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <img src="/img/phones.png" alt="">
-                </div>
-                <div>
-                    <a href="/phones">Most Secure Phones to Store your crypto assets</a>
-                    <p>
-                        Should you buy one, and which are the most secured 
-                        ones available today? Let's find out below. Blockchain 
-                        technology has exploded in popularity over the past 
-                        several years across a wide range of sectors. Blockchain 
-                        apps have since been brought to the smartphone industry 
-                        and have the capacity to safely and transparently store data.
- 
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <img src="/img/Android.png" alt="">
-                </div>
-                <div>
-                    <a href="/gpu">These are the best GPU's to choose from</a>
-                    <p>
-                        After the devastating attacks of the Gauls, 
-                        the Romans wanted to leave the city and immigrate 
-                        to Veii. Camillus, as a “Romulus and as the father 
-                        of his country and second founder of the city,”
-                    </p>
-                </div>
-            </div>
+            <% } %>
         </div>
     </div>
 </div>

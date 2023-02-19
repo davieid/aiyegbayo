@@ -1,0 +1,28 @@
+<%- include('../partials/head') %>
+
+    <div class="app">
+        <%- include('../partials/admin') %>
+        <h2>
+            <%= page %>
+        </h2>
+        <div class="admin-form">
+            <form action="<%= action %>" method="post" enctype="multipart/form-data">
+                <div style="display: none;">
+                    <label for="email">Username</label>
+                    <input type="email" name="email" value="<%= user.email %>"
+                        placeholder="Enter email" required>
+                </div>
+                <div>
+                    <label for="image">Select File</label>
+                    <br>
+                    <input type="file" name="image" required/>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="admin-article"></div>
+    </div>
+
+<%- include('../partials/foot') %>
